@@ -1,0 +1,4 @@
+lib : pour les fichiers des bibliothèques (.a/.so/.lib) ;
+include : pour les fichiers d'entête (notamment, ceux de la SDL) ;
+src : pour vos fichiers de code source.
+Cette organisation permet d'éviter à ce que vous ayez à installer (ou faire installer) la bibliothèque sur chacun des postes que vous utiliserez : elle est intégrée dans le projet. De plus, l'installation de la bibliothèque dans les répertoires des éditeurs n'est pas recommandée (même si certains sites font de cette façon :(), notamment, car vous forcez l'utilisateur recevant votre projet à installer lui-même la bibliothèque et à reconfigurer le projet, mais aussi, car cela entraîne des oublis. D'autant plus que sous Windows, il n'y a pas d'emplacement déterminé pour mettre les bibliothèques.
